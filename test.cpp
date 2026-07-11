@@ -3,10 +3,10 @@
 using namespace std;
 /*
  This is a small thing made out of boredom that everyone did before
- no data is saved
- all done real time
+ No data is saved
+ All done in real time
  0 AI help js research
- Take it as a simple exercise this was old and I want to keep my old projects to revist them someday.
+ Take it as a simple exercise; this was old, and I want to keep my old projects to revisit them someday.
 */
 
 int choice;
