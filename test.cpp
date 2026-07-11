@@ -8,27 +8,26 @@ using namespace std;
  0 AI help js research
  Take it as a simple exercise; this was old, and I want to keep my old projects to revisit them someday.
 */
-
 int choice;
 double balance = 0.0;                           // Global initialization
 string name = "Linus Torvalds";
-
-double depositBalance(double dAmount){          // Function #1
+double depositBalance(){          // Function #1
+    double dAmount;
     cout << "Enter amount to deposit:" << endl;
     cin >> dAmount;
     balance += dAmount;
     cout << "Deposit successful." << endl;
     return balance;
 };
-
-double withdrawBalance(double wAmount) {        // Function #2
+double withdrawBalance() {        // Function #2
+    double wAmount;
     cout << "Enter amount to withdraw:" << endl;
     cin >> wAmount;
     balance -= wAmount;
     cout << "Withdrawal successful." << endl;
     return balance;
 };
-void showBalance(double balance){               // Function #3
+void showBalance(){               // Function #3
     cout << "───────────" << endl
          << "| Name: " << name << endl
          << "| Balance: " << balance << endl
@@ -50,18 +49,17 @@ int main(){
         cin >> choice;
         switch (choice) {
             case 1:
-                depositBalance(balance);
+                depositBalance();
                 continue;
             case 2:
-                withdrawBalance(balance);
+                withdrawBalance();
                 continue;
             case 3:
-                showBalance(balance);
+                showBalance();
                 continue;
             case 0:
                 break;
         }
-
         break;
     }
     cout << "──────────[ Thank you for choosing The National Bank. ]──────────" << endl;
